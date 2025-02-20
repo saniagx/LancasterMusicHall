@@ -1,58 +1,116 @@
 import java.sql.Date;
 import java.sql.Time;
 
-public class Event {
+public class Event implements IEvent {
     private int eventID;
     private String eventName;
+    private String eventType;
     private Date eventDate;
     private Time eventStartTime;
     private Time eventEndTime;
+    private float eventPrice;
+    private int venueID;
+    private String venueName;
 
-    public Event(int eventID, String eventName, Date eventDate, Time eventStartTime, Time eventEndTime) {
+    public Event(int eventID, String eventName, String eventType, Date eventDate, Time eventStartTime, Time eventEndTime, float eventPrice, int venueID, String venueName) {
         this.eventID = eventID;
         this.eventName = eventName;
+        this.eventType = eventType;
         this.eventDate = eventDate;
         this.eventStartTime = eventStartTime;
         this.eventEndTime = eventEndTime;
+        this.eventPrice = eventPrice;
+        this.venueID = venueID;
+        this.venueName = venueName;
     }
 
+    @Override
     public int getEventID() {
-        return eventID;
+        return this.eventID;
     }
 
+    @Override
     public void setEventID(int eventID) {
         this.eventID = eventID;
     }
 
+    @Override
     public String getEventName() {
-        return eventName;
+        return this.eventName;
     }
 
+    @Override
     public void setEventName(String eventName) {
         this.eventName = eventName;
     }
 
-    public Date getEventDate() {
-        return eventDate;
+    @Override
+    public String getEventType() {
+        return this.eventType;
     }
 
+    @Override
+    public void setEventType(String eventType) {
+        this.eventType = eventType;
+    }
+
+    @Override
+    public Date getEventDate() {
+        return this.eventDate;
+    }
+
+    @Override
     public void setEventDate(Date eventDate) {
         this.eventDate = eventDate;
     }
 
+    @Override
     public Time getEventStartTime() {
-        return eventStartTime;
+        return this.eventStartTime;
     }
 
+    @Override
     public void setEventStartTime(Time eventStartTime) {
         this.eventStartTime = eventStartTime;
     }
 
+    @Override
     public Time getEventEndTime() {
-        return eventEndTime;
+        return this.eventEndTime;
     }
 
+    @Override
     public void setEventEndTime(Time eventEndTime) {
         this.eventEndTime = eventEndTime;
+    }
+
+    @Override
+    public float getEventPrice() {
+        return this.eventPrice;
+    }
+
+    @Override
+    public void setEventPrice(float eventPrice) {
+        this.eventPrice = eventPrice;
+    }
+
+    @Override
+    public int getVenueID() {
+        return this.venueID;
+    }
+
+    @Override
+    public void setVenueID(int venueID) {
+        this.venueID = venueID;
+    }
+
+    @Override
+    public String getVenueName() {
+        return this.venueName;
+    }
+
+    @Override
+    public void setVenueName(String venueName) {
+        this.venueName = venueName;
     }
 }
