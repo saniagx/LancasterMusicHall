@@ -1,4 +1,4 @@
-public interface IGroupBookings {
+public interface IBookings {
     /** MARKETING REQUIREMENTS:
      *      seatNumber
      *      rowNumber
@@ -9,16 +9,15 @@ public interface IGroupBookings {
     // --> then, we can calculate booking size by storing the size of the array or doing array length
     // --> we can generate a unique bookingID for this array of bookings
     // --> the seats would be objects within the array and would contain their data, such as Number, Row and Section (which hall or room).
-    
-    int getSeatNumber();
 
-    void setSeatNumber(int seatNumber);
+    /* if the only functionality of this interface is to get access to seat information and group sizes, this can be moved to IEvent
+    *  the other team can access seat information through the event's unique SeatingConfig -> Section -> Seat
+    *  groupSize can be found by looking for consecutive seats with the same bookingID
+    */
 
-    int getRowNumber();
+    ISeatingConfig getSeatingConfig();
 
-    void setRowNumber(int rowNumber);
+    Seat getSeat();
 
     int getGroupSize();
-
-    void setGroupSize(int groupSize);
 }
