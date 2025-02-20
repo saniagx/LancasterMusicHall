@@ -1,3 +1,6 @@
+import java.sql.Date;
+import java.sql.Time;
+
 public interface IMeetings {
     /** BOX OFFICE REQUIREMENTS:
      *      eventType : String
@@ -5,6 +8,16 @@ public interface IMeetings {
      *      eventDate : Date
      *      eventStartTime : time
      *      eventEndTime : time
-     *      (I'm so glad the box office team actually told us the data types they want things in)
      */
+
+    // This shares methods with Event so perhaps something can be done with inheritance
+    String getEventType();
+
+    String getRoomType();
+
+    Date getEventDate();
+
+    Time getEventStartTime();
+
+    Time getEventEndTime();
 }
