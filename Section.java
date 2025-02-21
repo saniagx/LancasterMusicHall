@@ -4,13 +4,13 @@ public class Section {
 
   //declare section name
   //2D array to store the seats within the section
-  private String name;
+  private String sectionName;
   private ArrayList<Seat> seats = new ArrayList<Seat>();;
 
   //getters and setters for the name and array of Seats
-  String getName();
+  String getSectionName();
 
-  void setName(String section);
+  void setSectionName(String sectionName);
 
   ArrayList<Seat> getSeats();
 }
