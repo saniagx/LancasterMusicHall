@@ -26,5 +26,7 @@ public interface ISeatingConfig{
 
   boolean getBooked(Seat seat);
   void setBooked(Seat seat, boolean booked);
-  
+
+  int getBookingID(Seat seat);
+  void setBookingID(Seat seat, int bookingID);
 }
