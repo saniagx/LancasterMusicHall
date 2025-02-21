@@ -8,6 +8,15 @@ public class Seat {
   private Section seatSection;
   private float price;
   private boolean booked; 
+
+  //constructor
+  public Seat(int seatNum, int rowNum, Section seatSection, float price, boolean booked){
+    this.seatNum = seatNum;
+    this.rowNum = rowNum;
+    this.seatSection = seatSection;
+    this.price = price;
+    this.booked = booked;
+  }
   
   //getters and setters for each seat
   int getSeatNumber();
