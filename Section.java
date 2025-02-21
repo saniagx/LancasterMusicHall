@@ -1,11 +1,16 @@
-//these are section objects which can contain it's own 2D array
+//these are section objects (named after Main Hall, Meeting Room etc.) 
+//which can contain it's own array of seats
 
 public class Section {
 
   //declare section name
-  //2D array to store the seats within the section
   private String sectionName;
   private ArrayList<Seat> seats = new ArrayList<Seat>();;
+
+  //constructor
+  public Section(String sectionName){
+    this.seats = seats;
+  }
 
   //getters and setters for the name and array of Seats
   String getSectionName();
