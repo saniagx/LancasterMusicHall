@@ -9,7 +9,7 @@ public interface ICalendar {
      *      time (I'm assuming this means start time and end time)
      *      availability (again, this is vague, need further clarification on this)
      */
-    void addEvent(Event event);
+    void addEvent(IEvent event);
 
     void removeEvent(int eventID);
 
