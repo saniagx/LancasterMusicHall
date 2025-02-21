@@ -8,15 +8,18 @@ public class Seat {
   private Section seatSection;
   private float price;
   private boolean booked;
+  private boolean restrictedView;
   private int bookingID;
 
   //constructor
-  public Seat(int seatNum, int rowNum, Section seatSection, float price, boolean booked){
+  public Seat(int seatNum, int rowNum, Section seatSection, float price, boolean booked, boolean restrictedView, int bookingID){
     this.seatNum = seatNum;
     this.rowNum = rowNum;
     this.seatSection = seatSection;
     this.price = price;
     this.booked = booked;
+    this.restrictedView = restrictedView;
+    this.bookingID = bookingID;
   }
   
   //getters and setters for each seat
@@ -37,9 +40,13 @@ public class Seat {
 
   void setPrice(float price);
 
-  boolean getBooked();
+  boolean isBooked();
 
   void setBooked(boolean booked);
+
+  boolean isRestrictedView();
+
+  void setRestrictedView(boolean restrictedView);
 
   int getBookingID();
 

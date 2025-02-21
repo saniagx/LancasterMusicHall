@@ -10,6 +10,7 @@ public interface ISeatingConfig{
   void setSectionName(Section section, String sectionName);
 
   ArrayList<Seat> getSeats(Section section);
+  ArrayList<Seat> getRestrictedSeats(Section section);
 
   //getters and setters for each seat
   int getSeatNumber(Seat seat);
