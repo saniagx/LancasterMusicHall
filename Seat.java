@@ -6,6 +6,7 @@ public class Seat {
   private int seatNum;
   private int rowNum; 
   private Section seatSection;
+  private float price;
   
   //getters and setters for each seat
   int getSeatNumber();
@@ -19,6 +20,10 @@ public class Seat {
   string getSection();
 
   void setSection(string section);
+
+  float getPrice();
+
+  void setPrice(float price);
 
 }
 
