@@ -8,7 +8,7 @@ public class Calendar implements ICalendar {
 
     // TO BE COMPLETED
     @Override
-    public void addEvent(Event event) {
+    public void addEvent(IEvent event) {
 
     }
 
