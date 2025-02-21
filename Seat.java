@@ -27,9 +27,9 @@ public class Seat {
 
   void setRowNumber(int rowNumber);
 
-  string getSection();
+  String getSection();
 
-  void setSection(string section);
+  void setSection(String section);
 
   float getPrice();
 

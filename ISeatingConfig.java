@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 //this will contain section objects
 public interface ISeatingConfig{
 
@@ -15,8 +17,8 @@ public interface ISeatingConfig{
   int getRowNumber();
   void setRowNumber(int rowNumber);
 
-  string getSection();
-  void setSection(string section);
+  String getSection();
+  void setSection(String section);
 
   float getPrice();
   void setPrice(float price);
