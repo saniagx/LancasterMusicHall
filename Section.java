@@ -11,7 +11,7 @@ public class Section {
 
   //constructor
   public Section(String sectionName){
-    this.seats = seats;
+    this.sectionName = sectionName;
   }
 
   //getters and setters for the name and array of Seats
