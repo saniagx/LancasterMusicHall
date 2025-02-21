@@ -4,16 +4,13 @@ public class Section {
 
   //declare section name
   //2D array to store the seats within the section
-  private string name;
-  Seat[][] seats = new Seats[row][col];
-
+  private String name;
+  private ArrayList<Seat> seats = new ArrayList<Seat>();;
 
   //getters and setters for the name and array of Seats
-  string getName();
+  String getName();
 
-  void setName(string section);
+  void setName(String section);
 
-  seat[][] getSeats();
-
-  void addSeat(Seat seat); 
+  ArrayList<Seat> getSeats();
 }
