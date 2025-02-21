@@ -3,27 +3,28 @@ import java.util.ArrayList;
 //this will contain section objects
 public interface ISeatingConfig{
 
+  ArrayList<Section> getSections();
   
   //implemented inside Section
-  String getSectionName();
-  void setSectionName();
+  String getSectionName(Section section);
+  void setSectionName(Section section, String sectionName);
 
-  ArrayList<Seat> getSeats();
+  ArrayList<Seat> getSeats(Section section);
 
    //getters and setters for each seat
-  int getSeatNumber();
-  void setSeatNumber(int seatNumber);
+  int getSeatNumber(Seat seat);
+  void setSeatNumber(Seat seat, int seatNumber);
 
-  int getRowNumber();
-  void setRowNumber(int rowNumber);
+  int getRowNumber(Seat seat);
+  void setRowNumber(Seat seat, int rowNumber);
 
-  String getSection();
-  void setSection(String section);
+  Section getSeatSection(Seat seat);
+  void setSeatSection(Seat seat, String section);
 
-  float getPrice();
-  void setPrice(float price);
+  float getPrice(Seat seat);
+  void setPrice(Seat seat, float price);
 
-  boolean getBooked();
-  void setBooked(boolean booked);
+  boolean getBooked(Seat seat);
+  void setBooked(Seat seat, boolean booked);
   
 }
