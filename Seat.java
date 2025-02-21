@@ -7,7 +7,8 @@ public class Seat {
   private int rowNum; 
   private Section seatSection;
   private float price;
-  private boolean booked; 
+  private boolean booked;
+  private int bookingID;
 
   //constructor
   public Seat(int seatNum, int rowNum, Section seatSection, float price, boolean booked){
@@ -19,15 +20,16 @@ public class Seat {
   }
   
   //getters and setters for each seat
-  int getSeatNumber();
+  // TO BE COMPLETED
+  int getSeatNum();
 
-  void setSeatNumber(int seatNumber);
+  void setSeatNum(int seatNumber);
 
   int getRowNumber();
 
   void setRowNumber(int rowNumber);
 
-  String getSection();
+  Section getSection();
 
   void setSection(String section);
 
@@ -39,5 +41,8 @@ public class Seat {
 
   void setBooked(boolean booked);
 
+  int getBookingID();
+
+  void setBookingID(int bookingID);
 }
 

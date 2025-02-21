@@ -15,6 +15,7 @@ public class Section {
   }
 
   //getters and setters for the name and array of Seats
+  // TO BE COMPLETED
   String getSectionName();
 
   void setSectionName(String sectionName);
