@@ -25,9 +25,15 @@ public interface ISeatingConfig{
   float getPrice(Seat seat);
   void setPrice(Seat seat, float price);
 
-  boolean getBooked(Seat seat);
-  void setBooked(Seat seat, boolean booked);
-
   int getBookingID(Seat seat);
   void setBookingID(Seat seat, int bookingID);
+
+  boolean isBooked(Seat seat);
+  void setBooked(Seat seat, boolean booked);
+
+  boolean isRestrictedView(Seat seat);
+  void setRestrictedView(Seat seat, boolean restrictedView);
+
+  boolean isVip(Seat seat);
+  void setVip(Seat seat, boolean vip);
 }
