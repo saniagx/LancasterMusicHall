@@ -1,9 +1,8 @@
 //this will contain section objects
 public interface ISeatingConfig{
-  //2D Array required in im
 
-  //just brainstorming information for now not finalised
 
+  
   //this is to get the sections from the array of section objects
   section getMainHall();
 
