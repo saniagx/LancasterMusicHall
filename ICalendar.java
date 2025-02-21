@@ -14,9 +14,9 @@ public interface ICalendar {
     void removeEvent(int eventID);
 
     // All event attributes can be accessed via the event class' public methods
-    Event getEvent(int eventID);
+    IEvent getEvent(int eventID);
 
-    ArrayList<Event> getAllEvents();
+    ArrayList<IEvent> getAllEvents();
 
     // I've assumed the data type is a boolean
     boolean getAvailability(Date date);

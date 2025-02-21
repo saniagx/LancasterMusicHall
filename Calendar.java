@@ -2,7 +2,7 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 public class Calendar implements ICalendar {
-    private ArrayList<Event> events = new ArrayList<>();;
+    private ArrayList<IEvent> events = new ArrayList<>();;
 
     public Calendar() {};
 
@@ -18,12 +18,12 @@ public class Calendar implements ICalendar {
     }
 
     @Override
-    public Event getEvent(int eventID) {
+    public IEvent getEvent(int eventID) {
         return null;
     }
 
     @Override
-    public ArrayList<Event> getAllEvents() {
+    public ArrayList<IEvent> getAllEvents() {
         return events;
     }
 
