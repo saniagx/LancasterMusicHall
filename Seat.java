@@ -7,49 +7,49 @@ public class Seat {
   private int rowNum; 
   private Section seatSection;
   private float price;
+  private int bookingID;
   private boolean booked;
   private boolean restrictedView;
-  private int bookingID;
+  private boolean vip;
+
 
   //constructor
-  public Seat(int seatNum, int rowNum, Section seatSection, float price, boolean booked, boolean restrictedView, int bookingID){
+  public Seat(int seatNum, int rowNum, Section seatSection, float price){
     this.seatNum = seatNum;
     this.rowNum = rowNum;
     this.seatSection = seatSection;
     this.price = price;
-    this.booked = booked;
-    this.restrictedView = restrictedView;
-    this.bookingID = bookingID;
+    this.bookingID = -1; // -1 to show seats by default aren't booked
+    this.booked = false;
+    this.restrictedView = false;
+    this.vip = false;
   }
   
   //getters and setters for each seat
   // TO BE COMPLETED
   int getSeatNum();
-
   void setSeatNum(int seatNumber);
 
   int getRowNumber();
-
   void setRowNumber(int rowNumber);
 
   Section getSection();
-
   void setSection(String section);
 
   float getPrice();
-
   void setPrice(float price);
 
-  boolean isBooked();
+  int getBookingID();
+  void setBookingID(int bookingID);
 
+  boolean isBooked();
   void setBooked(boolean booked);
 
   boolean isRestrictedView();
-
   void setRestrictedView(boolean restrictedView);
 
-  int getBookingID();
+  boolean isVip();
+  void setVip(boolean vip);
 
-  void setBookingID(int bookingID);
 }
 
