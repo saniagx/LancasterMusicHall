@@ -11,7 +11,7 @@ public interface ISeatingConfig{
 
   ArrayList<Seat> getSeats(Section section);
 
-   //getters and setters for each seat
+  //getters and setters for each seat
   int getSeatNumber(Seat seat);
   void setSeatNumber(Seat seat, int seatNumber);
 

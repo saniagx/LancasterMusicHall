@@ -2,23 +2,6 @@ import java.sql.Date;
 import java.sql.Time;
 
 public interface IEvent {
-    /** Attributes accessible through this interface:
-     *      eventID : int
-     *      eventName : String
-     *      eventType : String
-     *      eventDate : Date
-     *      eventStartTime : time
-     *      eventEndTime : time
-     *      eventPrice : float
-     *      venueID : int
-     *      venueName : String
-     *      seatingConfig: ISeatingConfig
-     *
-     *      I've omitted 'roomType' as eventType = 'meeting' does the same job
-     */
-
-    // No need for a meeting interface, meeting events can be implemented through this event interface
-
     int getEventID();
     void setEventID(int eventID);
 
