@@ -27,5 +27,16 @@ public class Section {
   public ArrayList<Seat> getSeats() {
     return seats;
   }
-  
+
+  // Add a seat to the section
+  public void addSeat(Seat seat) {
+    this.seats.add(seat);
+  }
+
+  // Remove a seat from the section
+  public void removeSeat(Seat seat) {
+    this.seats.remove(seat);
+  }
+
+
 }
