@@ -1,4 +1,4 @@
-//these are seat objects which can contain data attributes
+package com.teamtwooperations.interfaces;
 
 public class Seat {
 

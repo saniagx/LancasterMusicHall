@@ -1,3 +1,5 @@
+package com.teamtwooperations.interfaces;
+
 import java.util.ArrayList;
 
 // These are section objects (named after Main Hall, Meeting Room etc.)
