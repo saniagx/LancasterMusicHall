@@ -11,7 +11,7 @@ public class Event implements IEvent {
     private float eventPrice;
     private int venueID;
     private String venueName;
-    private ISeatingConfig seatingConfig;
+    private int seatingConfigID;
 
     public Event(int eventID, String eventName, String eventType, Date eventDate, Time eventStartTime, Time eventEndTime, float eventPrice, int venueID, String venueName) {
         this.eventID = eventID;
@@ -23,6 +23,9 @@ public class Event implements IEvent {
         this.eventPrice = eventPrice;
         this.venueID = venueID;
         this.venueName = venueName;
+
+        // Store seatingConfigID automatically
+        this.seatingConfigID = SeatingConfig.getSeatingConfigID(venueID, eventType);
     }
 
     @Override
@@ -115,13 +118,9 @@ public class Event implements IEvent {
         this.venueName = venueName;
     }
 
-    @Override
-    public ISeatingConfig getSeatingConfig() {
-        return seatingConfig;
-    }
+    // Getter for seatingConfigID
 
-    @Override
-    public void setSeatingConfig(ISeatingConfig seatingConfig) {
-        this.seatingConfig = seatingConfig;
+    public int getSeatingConfigID() {
+        return seatingConfigID;
     }
 }
