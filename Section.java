@@ -1,24 +1,31 @@
 import java.util.ArrayList;
 
-//these are section objects (named after Main Hall, Meeting Room etc.)
-//which can contain it's own array of seats
+// These are section objects (named after Main Hall, Meeting Room etc.)
+// Which can contain their own array of seats
 
 public class Section {
 
-  //declare section name
+  // Declare Section Name
   private String sectionName;
   private ArrayList<Seat> seats = new ArrayList<Seat>();;
 
-  //constructor
+  // Constructor
   public Section(String sectionName){
     this.sectionName = sectionName;
   }
 
-  //getters and setters for the name and array of Seats
-  // TO BE COMPLETED
-  String getSectionName();
+  // Getter and Setter for sectionName
+  public String getSectionName() {
+    return sectionName;
+  }
 
-  void setSectionName(String sectionName);
+  public void setSectionName(String sectionName) {
+    this.sectionName = sectionName;
+  }
 
-  ArrayList<Seat> getSeats();
+  // Getter for seats
+  public ArrayList<Seat> getSeats() {
+    return seats;
+  }
+  
 }
