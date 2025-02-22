@@ -120,6 +120,7 @@ public class Event implements IEvent {
 
     // Getter for seatingConfigID
 
+    @Override
     public int getSeatingConfigID() {
         return seatingConfigID;
     }

@@ -29,6 +29,5 @@ public interface IEvent {
     String getVenueName();
     void setVenueName(String venueName);
 
-    ISeatingConfig getSeatingConfig();
-    void setSeatingConfig(ISeatingConfig seatingConfig);
+    int getSeatingConfigID();
 }
