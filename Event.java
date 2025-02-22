@@ -77,4 +77,5 @@ public class Event implements IEvent {
     // A setter for SeatingConfigID isn't provided as it is automatically assigned within the Event's constructor
     @Override
     public int getSeatingConfigID() { return seatingConfigID; }
+
 }
