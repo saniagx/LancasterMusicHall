@@ -4,7 +4,7 @@ public class Seat {
 
   //attributes for each seat
   private int seatNum;
-  private int rowNum; 
+  private int rowNum;
   private Section seatSection;
   private float price;
   private int bookingID;
@@ -24,32 +24,78 @@ public class Seat {
     this.restrictedView = false;
     this.vip = false;
   }
-  
-  //getters and setters for each seat
-  // TO BE COMPLETED
-  int getSeatNum();
-  void setSeatNum(int seatNumber);
 
-  int getRowNumber();
-  void setRowNumber(int rowNumber);
+  // Getter and Setter for seatNum
+  public int getSeatNum() {
+    return seatNum;
+  }
 
-  Section getSection();
-  void setSection(String section);
+  public void setSeatNum(int seatNumber) {
+    this.seatNum = seatNumber;
+  }
 
-  float getPrice();
-  void setPrice(float price);
+  // Getter and Setter for rowNum
+  public int getRowNumber() {
+    return rowNum;
+  }
 
-  int getBookingID();
-  void setBookingID(int bookingID);
+  public void setRowNumber(int rowNumber) {
+    this.rowNum = rowNumber;
+  }
 
-  boolean isBooked();
-  void setBooked(boolean booked);
+  // Getter and Setter for seatSection
+  public Section getSection() {
+    return seatSection;
+  }
 
-  boolean isRestrictedView();
-  void setRestrictedView(boolean restrictedView);
+  public void setSection(Section section) {
+    this.seatSection = section;
+  }
 
-  boolean isVip();
-  void setVip(boolean vip);
+  // Getter and Setter for price
+  public float getPrice() {
+    return price;
+  }
+
+  public void setPrice(float price) {
+    this.price = price;
+  }
+
+  // Getter and Setter for bookingID
+  public int getBookingID() {
+    return bookingID;
+  }
+
+  public void setBookingID(int bookingID) {
+    this.bookingID = bookingID;
+  }
+
+  // Getter and Setter for booked
+  public boolean isBooked() {
+    return booked;
+  }
+
+  public void setBooked(boolean booked) {
+    this.booked = booked;
+  }
+
+  // Getter and Setter for restrictedView
+  public boolean isRestrictedView() {
+    return restrictedView;
+  }
+
+  public void setRestrictedView(boolean restrictedView) {
+    this.restrictedView = restrictedView;
+  }
+
+  // Getter and Setter for VIP
+  public boolean isVip() {
+    return vip;
+  }
+
+  public void setVip(boolean vip) {
+    this.vip = vip;
+  }
 
 }
 
