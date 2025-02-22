@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-//this will contain section objects
 public interface ISeatingConfig{
 
   // Get sections for a given seating configuration ID
@@ -9,36 +8,35 @@ public interface ISeatingConfig{
   // Get the full SeatingConfig object (if needed)
   SeatingConfig getSeatingConfiguration(int seatingConfigID);
 
+  // Get and set section names
+  String getSectionName(Section section);
+  void setSectionName(Section section, String sectionName);
 
-//  //implemented inside Section
-//  String getSectionName(Section section);
-//  void setSectionName(Section section, String sectionName);
+  // Retrieve seats from a section
+  ArrayList<Seat> getSeats(Section section);
+  ArrayList<Seat> getRestrictedSeats(Section section);
+
+  // Modify seat status
+  void setSeatBooked(Seat seat, boolean booked);
+  void setSeatVip(Seat seat, boolean vip);
+  void setSeatRestrictedView(Seat seat, boolean restricted);
+
+  // Commented out for now - need additional information
+//    int getSeatNumber(Seat seat);
+//    void setSeatNumber(Seat seat, int seatNumber);
 //
-//  ArrayList<Seat> getSeats(Section section);
-//  ArrayList<Seat> getRestrictedSeats(Section section);
+//    int getRowNumber(Seat seat);
+//    void setRowNumber(Seat seat, int rowNumber);
 //
-//  //getters and setters for each seat
-//  int getSeatNumber(Seat seat);
-//  void setSeatNumber(Seat seat, int seatNumber);
+//    Section getSeatSection(Seat seat);
+//    void setSeatSection(Seat seat, String section);
 //
-//  int getRowNumber(Seat seat);
-//  void setRowNumber(Seat seat, int rowNumber);
+//    float getPrice(Seat seat);
+//    void setPrice(Seat seat, float price);
 //
-//  Section getSeatSection(Seat seat);
-//  void setSeatSection(Seat seat, String section);
+//    int getBookingID(Seat seat);
+//    void setBookingID(Seat seat, int bookingID);
 //
-//  float getPrice(Seat seat);
-//  void setPrice(Seat seat, float price);
-//
-//  int getBookingID(Seat seat);
-//  void setBookingID(Seat seat, int bookingID);
-//
-//  boolean isBooked(Seat seat);
-//  void setBooked(Seat seat, boolean booked);
-//
-//  boolean isRestrictedView(Seat seat);
-//  void setRestrictedView(Seat seat, boolean restrictedView);
-//
-//  boolean isVip(Seat seat);
-//  void setVip(Seat seat, boolean vip);
+//    boolean isBooked(Seat seat);
+//    void setBooked(Seat seat, boolean booked);
 }
