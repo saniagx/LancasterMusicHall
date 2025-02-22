@@ -3,8 +3,16 @@ import java.util.ArrayList;
 //this will contain section objects
 public interface ISeatingConfig{
 
-  ArrayList<Section> getSections();
-  
+  // Get seating sections for a given seating configuration
+  ArrayList<Section> getSections(int seatingConfigID);
+
+  // Get the full SeatingConfig object
+  SeatingConfig getSeatingConfiguration(int seatingConfigID);
+
+  // Allow Box Office to request seating layout
+  ArrayList<Section> getBaseSeatingConfiguration(int seatingConfigID);
+
+
   //implemented inside Section
   String getSectionName(Section section);
   void setSectionName(Section section, String sectionName);
