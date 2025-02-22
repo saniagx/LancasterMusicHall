@@ -2,6 +2,8 @@ import java.sql.Date;
 import java.sql.Time;
 
 public interface IEvent {
+
+    // Getters and setters for each attribute
     int getEventID();
     void setEventID(int eventID);
 
@@ -29,5 +31,6 @@ public interface IEvent {
     String getVenueName();
     void setVenueName(String venueName);
 
+    // A setter for SeatingConfigID isn't provided as it is automatically assigned within the Event's constructor
     int getSeatingConfigID();
 }

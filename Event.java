@@ -28,100 +28,53 @@ public class Event implements IEvent {
         this.seatingConfigID = SeatingConfig.getSeatingConfigID(venueID, eventType);
     }
 
+    // Getters and setters for each attribute
     @Override
-    public int getEventID() {
-        return this.eventID;
-    }
+    public int getEventID() { return this.eventID; }
+    @Override
+    public void setEventID(int eventID) { this.eventID = eventID; }
 
     @Override
-    public void setEventID(int eventID) {
-        this.eventID = eventID;
-    }
+    public String getEventName() { return this.eventName; }
+    @Override
+    public void setEventName(String eventName) { this.eventName = eventName; }
 
     @Override
-    public String getEventName() {
-        return this.eventName;
-    }
+    public String getEventType() { return this.eventType; }
+    @Override
+    public void setEventType(String eventType) { this.eventType = eventType; }
 
     @Override
-    public void setEventName(String eventName) {
-        this.eventName = eventName;
-    }
+    public Date getEventDate() { return this.eventDate; }
+    @Override
+    public void setEventDate(Date eventDate) { this.eventDate = eventDate; }
 
     @Override
-    public String getEventType() {
-        return this.eventType;
-    }
+    public Time getEventStartTime() { return this.eventStartTime; }
+    @Override
+    public void setEventStartTime(Time eventStartTime) { this.eventStartTime = eventStartTime; }
 
     @Override
-    public void setEventType(String eventType) {
-        this.eventType = eventType;
-    }
+    public Time getEventEndTime() { return this.eventEndTime; }
+    @Override
+    public void setEventEndTime(Time eventEndTime) { this.eventEndTime = eventEndTime; }
 
     @Override
-    public Date getEventDate() {
-        return this.eventDate;
-    }
+    public float getEventPrice() { return this.eventPrice; }
+    @Override
+    public void setEventPrice(float eventPrice) { this.eventPrice = eventPrice; }
 
     @Override
-    public void setEventDate(Date eventDate) {
-        this.eventDate = eventDate;
-    }
+    public int getVenueID() { return this.venueID; }
+    @Override
+    public void setVenueID(int venueID) { this.venueID = venueID; }
 
     @Override
-    public Time getEventStartTime() {
-        return this.eventStartTime;
-    }
-
+    public String getVenueName() { return this.venueName; }
     @Override
-    public void setEventStartTime(Time eventStartTime) {
-        this.eventStartTime = eventStartTime;
-    }
+    public void setVenueName(String venueName) { this.venueName = venueName; }
 
+    // A setter for SeatingConfigID isn't provided as it is automatically assigned within the Event's constructor
     @Override
-    public Time getEventEndTime() {
-        return this.eventEndTime;
-    }
-
-    @Override
-    public void setEventEndTime(Time eventEndTime) {
-        this.eventEndTime = eventEndTime;
-    }
-
-    @Override
-    public float getEventPrice() {
-        return this.eventPrice;
-    }
-
-    @Override
-    public void setEventPrice(float eventPrice) {
-        this.eventPrice = eventPrice;
-    }
-
-    @Override
-    public int getVenueID() {
-        return this.venueID;
-    }
-
-    @Override
-    public void setVenueID(int venueID) {
-        this.venueID = venueID;
-    }
-
-    @Override
-    public String getVenueName() {
-        return this.venueName;
-    }
-
-    @Override
-    public void setVenueName(String venueName) {
-        this.venueName = venueName;
-    }
-
-    // Getter for seatingConfigID
-
-    @Override
-    public int getSeatingConfigID() {
-        return seatingConfigID;
-    }
+    public int getSeatingConfigID() { return seatingConfigID; }
 }
