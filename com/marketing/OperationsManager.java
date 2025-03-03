@@ -1,5 +1,4 @@
-package models;
-import interfaces.OperationsInterface;
+package com.marketing;
 import java.util.*;
 
 /**

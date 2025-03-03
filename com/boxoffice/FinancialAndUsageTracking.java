@@ -1,4 +1,4 @@
-package com.teamoneboxoffice.interfaces;
+package com.boxoffice;
 
 public interface FinancialAndUsageTracking {
     /**

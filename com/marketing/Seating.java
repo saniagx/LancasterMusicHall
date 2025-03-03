@@ -1,4 +1,4 @@
-package models;
+package com.marketing;
 
 /**
  * Represents reserved seating information for an event.

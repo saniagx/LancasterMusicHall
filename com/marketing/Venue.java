@@ -1,4 +1,4 @@
-package models;
+package com.marketing;
 
 /**
  * Represents a venue where events take place.

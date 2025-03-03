@@ -1,4 +1,4 @@
-package models;
+package com.marketing;
 
 /**
  * Represents discount details applied to ticket purchases.

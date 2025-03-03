@@ -1,4 +1,4 @@
-package interfaces;
+package com.marketing;
 
 /**
  * Interface defining operations-related functionalities.

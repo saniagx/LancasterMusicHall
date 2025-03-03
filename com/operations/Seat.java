@@ -1,4 +1,4 @@
-package com.teamtwooperations.interfaces;
+package com.operations;
 
 public class Seat {
 

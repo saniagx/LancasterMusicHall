@@ -1,4 +1,4 @@
-package com.teamoneboxoffice.interfaces;
+package com.boxoffice;
 
 import java.util.HashMap;
 import java.util.Map;

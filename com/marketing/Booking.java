@@ -1,4 +1,4 @@
-package models;
+package com.marketing;
 
 /**
  * Represents a booking enquiry for large events.
