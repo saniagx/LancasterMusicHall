@@ -1,9 +1,8 @@
 package gui;
 
-public class MainMenu extends Run {
-    private ScreenController sc;
+import src.Run;
 
-    public MainMenu() {
-        this.sc = getScreenController();
-    }
+public class MainMenu extends Run {
+
+    public MainMenu() {}
 }
