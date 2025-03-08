@@ -7,11 +7,11 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Login extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
             Scene scene = new Scene(root, 800, 600);
 
             Image LMHlogo = new Image("assets/LMHlogo.png");

@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #122023;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Main">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #122023;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Login">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" layoutX="250.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
       <ImageView fitHeight="188.0" fitWidth="250.0" layoutX="275.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
