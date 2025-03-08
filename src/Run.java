@@ -1,5 +1,6 @@
-package gui;
+package src;
 
+import gui.ScreenController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -21,7 +22,7 @@ public class Run extends Application {
             Scene scene = new Scene(new Pane(), 800, 600);
             sc = new ScreenController(scene);
             initializeScreens();
-            sc.loadScreen("Login"); // Login screen is loaded on startup
+            ScreenController.loadScreen("Login"); // Login screen is loaded on startup
 
             Image LMHlogo = new Image("assets/LMHlogo.png");
             stage.getIcons().add(LMHlogo);
@@ -38,11 +39,7 @@ public class Run extends Application {
 
     // Adds all screens to the screen hashmap in ScreenController
     public void initializeScreens() throws IOException {
-        sc.addScreen("Login", FXMLLoader.load(getClass().getResource("login.fxml")));
-        sc.addScreen("MainMenu", FXMLLoader.load(getClass().getResource("mainMenu.fxml")));
-    }
-
-    public static ScreenController getScreenController() {
-        return sc;
+        sc.addScreen("Login", FXMLLoader.load(getClass().getResource("/gui/login.fxml")));
+        sc.addScreen("MainMenu", FXMLLoader.load(getClass().getResource("/gui/mainMenu.fxml")));
     }
 }
