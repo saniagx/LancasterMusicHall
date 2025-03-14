@@ -6,37 +6,39 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #122023;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Login">
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #122023;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Login">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" layoutX="250.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" style="fx-background-radius: 20;" width="300.0" />
-      <ImageView fitHeight="188.0" fitWidth="250.0" layoutX="275.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/LMHlogo.png" />
-         </image>
-      </ImageView>
-      <Text layoutX="285.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Management Software">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Text>
-      <TextField layoutX="294.0" layoutY="350.0" prefWidth="212.0" promptText="Enter Username" style="-fx-alignment: center;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
-      <PasswordField layoutX="294.0" layoutY="400.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter Password" style="-fx-alignment: center;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </PasswordField>
-      <Button layoutX="369.0" layoutY="447.0" mnemonicParsing="false" onAction="#LoginButton" style="-fx-background-color: #122023;" text="Login" textFill="WHITE">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
+      <AnchorPane layoutX="330.0" layoutY="60.0" prefHeight="420.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="250.0" layoutX="25.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/LMHlogo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="20.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Management Software">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField layoutX="44.0" layoutY="260.0" prefWidth="212.0" promptText="Enter Username" style="-fx-alignment: center;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField layoutX="44.0" layoutY="310.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter Password" style="-fx-alignment: center;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="119.0" layoutY="360.0" mnemonicParsing="false" onAction="#LoginButton" style="-fx-background-color: #122023;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
