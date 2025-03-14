@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="flexganttfx">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/flexganttfx" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/flexganttfx" recursive="false" />
+  </library>
+</component>
