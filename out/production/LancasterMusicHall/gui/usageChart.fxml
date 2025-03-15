@@ -8,7 +8,7 @@
 <AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #122023;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UsageChart">
    <children>
       <GanttChart layoutY="29.0" prefHeight="510.0" prefWidth="960.0" />
-      <Button fx:id="backButton" layoutY="-1.0" mnemonicParsing="false" onAction="#BackButton" text="Back">
+      <Button layoutY="-1.0" mnemonicParsing="false" onAction="#BackButton" text="Back">
          <font>
             <Font size="14.0" />
          </font>
