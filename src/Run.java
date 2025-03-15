@@ -41,5 +41,6 @@ public class Run extends Application {
     public void initializeScreens() throws IOException {
         sc.addScreen("Login", FXMLLoader.load(getClass().getResource("/gui/login.fxml")));
         sc.addScreen("MainMenu", FXMLLoader.load(getClass().getResource("/gui/mainMenu.fxml")));
+        sc.addScreen("UsageChart", FXMLLoader.load(getClass().getResource("/gui/usageChart.fxml")));
     }
 }

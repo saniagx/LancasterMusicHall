@@ -16,7 +16,12 @@
                      <Font name="System Bold" size="32.0" />
                   </font>
                </Text>
-               <Button layoutX="75.0" layoutY="80.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F8F8F8;" text="Calendar">
+               <Button layoutX="75.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F8F8F8;" text="Calendar">
+                  <font>
+                     <Font name="System Bold" size="16.0" />
+                  </font>
+               </Button>
+               <Button layoutX="77.0" layoutY="180.0" mnemonicParsing="false" onAction="#UsageChart" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #F8F8F8;" text="Usage Chart">
                   <font>
                      <Font name="System Bold" size="16.0" />
                   </font>
